@@ -14,7 +14,7 @@ class Solution:
         pre_point = lower - 1
         for point in nums:
             if pre_point != point and pre_point + 1 != point:
-                # 不重叠，不相邻
+                # 不重叠，不相邻 test
                 result.append(self.helper(pre_point + 1, point - 1))
             pre_point = point
 
